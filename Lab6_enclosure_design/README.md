@@ -1,5 +1,5 @@
 
-Welcome to the enclosure design lab.  You'll make a simple enclosure for your PCB, similar to the example.
+Welcome to the enclosure design lab.  You'll make a simple enclosure for the sample PCB.
 
 To transfer data from the PCB program into Fusion we'll use a STEP file which is a common format for 3D interchange that will maintain geometry and dimensions and works for multi-part assemblies.  For the PCB you can export a STEP file from KiCAD (recommended to try this yourself) or just use the STEP file in the repository. 
 
