@@ -4,7 +4,7 @@
 
 In this lab you will learn about PlatformIO to help manage your Hardware/Software Lab projects in a systematic manner.
 
-1. Carefully follow the steps written in the **[Lab 1: Introduction to Platform IO.md](https://github.com/GIXLabs/TECHIN514_W24/blob/main/Lab%201%20-%20Intro%20to%20PlatformIO/Lab1%20Intro%20to%20PlatformIO.md)** to setup a demo project using the XIAO SAMD21 board that some of you have used for your wearables project. 
+1. Carefully follow the steps written in the **[Lab 1: Introduction to Platform IO.md](Lab1_intro_to_platformio.md)** to setup a demo project using the XIAO SAMD21 board that some of you have used for your wearables project. 
 While the tutorial is specific to setting up the XIAO SAMD21, the setup for most other boards is similar.
 1. If you are using ESP32 or some other board please refer to it’s [respective tutorial](https://docs.platformio.org/en/stable/tutorials/espressif32/arduino_debugging_unit_testing.html) on Platform IO.
 2. Here’s a list of additional tutorials and references
