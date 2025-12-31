@@ -70,7 +70,7 @@ The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar mi
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg)
 
-1. Go to the PlatformIO home page by clicking on the house icon on the status bar at the bottom of the editor window. It is the house icon on the purple bar.
+1. Go to the PlatformIO home page by clicking on the house icon on the status bar at the bottom of the editor window. It is the house icon on the purple or blue bar.
 2. Bring up the **`Board Explorer`** in PlatformIO by clicking on the Boards icon in the left panel.
 3. Enter **`XIAO`** in the **`Search Board...`** search box and press Enter.
 4. Click on the **`Espressif 32`** platform
@@ -95,7 +95,7 @@ And that completes the installation of a platform. PlatformIO will know where to
 2. Go to the **`Projects`** page in PlatformIO by clicking on the **`Projects`** icon in the left panel.
 3. Bring up the **`Project Wizard`** in PlatformIO by clicking on the **`+ Create New Project`** button in the top right of the **`Projects`** page.
 4. Enter a project name in the **`Name`** field. Here I entered **`hello_xiao`**.
-5. Select the **`Board`**. The full name is Seeeduino XIAO but you can enter a part of the name and a list of matching boards will be displayed in the drop-down list.
+5. Select the **`Board`**. The full name is Seeed Studio XIAO ESP32C3 but you can enter a part of the name and a list of matching boards will be displayed in the drop-down list.
 6. Click on the full board name in the list. Not visible in the above image, the **`Framework`** will automatically be set to Arduino.
 7. Leaving **`Location`** checked will mean that the project will be saved in a directory called **`hello_xiao`** in the PlatformIO projects directory. The default location of that folder is **`/home/*user*/Documents/PlatformIO/Projects`**.
 8. If that location is acceptatble, click on the **Finish** button.
@@ -109,29 +109,29 @@ I prefer to group board specific projects in a directory named after the board.
 3. Then I clicked on the desired subdirectory named **`xiao`** which I had created previously. Otherwise I could have clicked on the **New** button to create the subdirectory.
 4. Click on the **Finish** button.
 
-This will create the project which consists of a number of directories and files that are displayed in the **`EXPLORER`** pane.
+This will create the project which consists of a number of directories and files that are displayed in the **`EXPLORER`** pane on the left.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg)
 
-Two files are important at this juncture. The **`main.cpp`** source file in the **`.../hello_xiao/src/`** which contains the typical Arduino sketch structure. Note how PlatformIO explicitly includes the **`Arduino.h`** header file in the project.
+Two files are important at this juncture. The **`main.cpp`** source directory in **`.../hello_xiao/src/`** which contains the typical Arduino sketch structure. Note how PlatformIO explicitly includes the **`Arduino.h`** header file in the project.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg)
 
-Check carefully the content of the project configuration file. For some reason my first project had the following content
+Check carefully the content of the project configuration file. They should look something like this:
 
 ```yaml
-[env:seeeduino]
-platform = atmelavr
-board = seeeduino
+[env:seeed_xiao_esp32c3]
+platform = espressif32
+board = seeed_xiao_esp32c3
 framework = arduino
 ```
 
-which is not correct. At this point, it is a good idea to add an entry setting the baud of the serial connection to the XIAO. The content of **`platformio.ini`** for a Seeeduino XIAO project should be:
+At this point, it is a good idea to add an entry setting the baud of the serial connection to the XIAO. The content of **`platformio.ini`** for a Seeed Studio XIAO ESP32C3 project should be:
 
 ```yaml
-[env:seeed_xiao]
-platform = atmelsam
-board = seeed_xiao
+[env:seeed_xiao_esp32c3]
+platform = espressif32
+board = seeed_xiao_esp32c3
 framework = arduino
 monitor_speed = 115200
 ```
@@ -145,7 +145,7 @@ see [Seeeduino](https://docs.platformio.org/en/latest/boards/atmelsam/seeed_xia
 Let's put what is probably the simplest working XIAO program in **`main.cpp`**.
 
 ```cpp
-/*  hello_xiao    A first sketch for the Seeeduino XIAO in PlatformIO*
+/*  hello_xiao    A first sketch for the Seeed Studio XIAO ESP32C3 in PlatformIO*
   
     *This example code is in the public domain.*
   
@@ -162,13 +162,15 @@ Let's put what is probably the simplest working XIAO program in **`main.cpp`**.
   }
 ```
 
-Click on the **`Build`** button of the PlatformIO toolbar.
+Click on the **`Build`** button of the PlatformIO toolbar, which looks like a check mark.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile.jpg)
 
 A terminal window will be opened in which the output from the compiler and linker will be displayed.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile2.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile2.jpg)
+
+Yours may say it failed with one error. Scroll up in the terminal to where the Traceback begins and look for "No module named 'intelhex'". If you see this, open a new terminal (icon on the bottom toolbar that looks like >_), and type in ```python -m pip install intelhex``` and press enter. Click the ***`Build`** button again on the bottom toolbar.
 
 ## Upload a Project
 
