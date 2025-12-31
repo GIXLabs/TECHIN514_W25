@@ -1,6 +1,6 @@
-# Lab 1 : Introduction to Platform IO with XIAO Seeeduino SAMD21
+# Lab 1 : Introduction to Platform IO with XIAO ESP32 C3
 
-**While the tutorial is specific to setting up the XIAO SAMD21, the setup for most other boards is similar.** Links will be in the README of this lab.
+**While the tutorial is specific to setting up the XIAO ESP32 C3, the setup for most other boards is similar.** Links will be in the README of this lab.
 
 # ****1. Introduction to Platform IO****
 
@@ -48,7 +48,7 @@ Before we dive into Platform IO, ensure you have the following ready:
   - code linters
   - Arduino specific extensions
 
-# 2. HELLO WORLD -  XIAO SAMD21
+# 2. HELLO WORLD -  XIAO ESP32 C3
 
 [Reference Tutorial](https://sigmdel.ca/michel/ha/xiao/seeeduino_xiao_platformio2_en.html)
 
@@ -62,7 +62,7 @@ Adding the PlatformIO extension in the editor is quite simple, just follow the 
 
 References to the **`Home`**, **`Build`**, **`Upload`** and **`Serial Monitor`** buttons will be made in what follows. The [toolbar documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#id4) gives the keyboard shortcuts for these buttons.
 
-The only hardware requirements is a free USB port on the desktop or portable computer to be used to download firmware to the XIAO or any other board and an appropriate USB cable to connect to the board. The XIAO requires a usb-c type cable.
+The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar microcontroller), and an appropriate USB cable to connect to the board. The XIAO requires a USB-C type cable.
 
 ## Installing the XIAO Board Definition
 
@@ -70,20 +70,20 @@ The only hardware requirements is a free USB port on the desktop or portable com
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg)
 
-1. Go to the PIO home page by clicking on the house icon on the status bar at the bottom of the editor window. If the mouse hovers over the iconthen the hint identifies it as the PlatformIO: Home button.
-2. Bring up the **`Board Explorer`** in PIO by clicking on the Boards icon in the left panel.
-3. Enter **`seeduino`** or **`xiao`** in the **`Search Board...`** search box and press Enter.
-4. Click on the **`Atmel SAM`** platform
+1. Go to the PlatformIO home page by clicking on the house icon on the status bar at the bottom of the editor window. It is the house icon on the purple bar.
+2. Bring up the **`Board Explorer`** in PlatformIO by clicking on the Boards icon in the left panel.
+3. Enter **`XIAO`** in the **`Search Board...`** search box and press Enter.
+4. Click on the **`Espressif 32`** platform
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg)
 
-1. Click on the **Install** button in the **`Atmel SAM`** page. Not surprisingly, this will install the platform.
+1. Click on the **Install** button in the **`Espressif 32`** page. Not surprisingly, this will install the platform.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg)
 
 A message box confirming the installation of the platform will pop up. Click on the **OK** button to close the message window.
 
-And that completes the installation of a platform. PIO will know where to obtain the toolchain and will manage to download needed packages as needed. It is now possible to create a project for the XIAO.
+And that completes the installation of a platform. PlatformIO will know where to obtain the toolchain and will manage to download needed packages as needed. It is now possible to create a project for the XIAO.
 
 ## Create a Project
 
@@ -91,13 +91,13 @@ And that completes the installation of a platform. PIO will know where to obtain
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_1.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_1.jpg)
 
-1. Go to the PIO home page by clicking on the PIO home button in the PIO toolbar on the status bar at the bottom of the editor window.
-2. Go to the **`Projects`** page in PIO by clicking on the **`Projects`** icon in the left panel.
-3. Bring up the **`Project Wizard`** in PIO by clicking on the **`+ Create New Project`** button in the top right of the **`Projects`** page.
+1. Go to the PlatformIO home page by clicking on the PlatformIO home button in the PlatformIO toolbar on the status bar at the bottom of the editor window.
+2. Go to the **`Projects`** page in PlatformIO by clicking on the **`Projects`** icon in the left panel.
+3. Bring up the **`Project Wizard`** in PlatformIO by clicking on the **`+ Create New Project`** button in the top right of the **`Projects`** page.
 4. Enter a project name in the **`Name`** field. Here I entered **`hello_xiao`**.
 5. Select the **`Board`**. The full name is Seeeduino XIAO but you can enter a part of the name and a list of matching boards will be displayed in the drop-down list.
 6. Click on the full board name in the list. Not visible in the above image, the **`Framework`** will automatically be set to Arduino.
-7. Leaving **`Location`** checked will mean that the project will be saved in a directory called **`hello_xiao`** in the PIO projects directory. The default location of that folder is **`/home/*user*/Documents/PlatformIO/Projects`**.
+7. Leaving **`Location`** checked will mean that the project will be saved in a directory called **`hello_xiao`** in the PlatformIO projects directory. The default location of that folder is **`/home/*user*/Documents/PlatformIO/Projects`**.
 8. If that location is acceptatble, click on the **Finish** button.
 
 I prefer to group board specific projects in a directory named after the board.
@@ -113,7 +113,7 @@ This will create the project which consists of a number of directories and files
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg)
 
-Two files are important at this juncture. The **`main.cpp`** source file in the **`.../hello_xiao/src/`** which contains the typical Arduino sketch structure. Note how PIO explicitely includes the **`Arduino.h`** header file in the project.
+Two files are important at this juncture. The **`main.cpp`** source file in the **`.../hello_xiao/src/`** which contains the typical Arduino sketch structure. Note how PlatformIO explicitly includes the **`Arduino.h`** header file in the project.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg)
 
@@ -145,24 +145,24 @@ see [Seeeduino](https://docs.platformio.org/en/latest/boards/atmelsam/seeed_xia
 Let's put what is probably the simplest working XIAO program in **`main.cpp`**.
 
 ```cpp
-*/*  hello_xiao    A first sketch for the Seeeduino XIAO in PlatformIO*
+/*  hello_xiao    A first sketch for the Seeeduino XIAO in PlatformIO*
   
     *This example code is in the public domain.*
   
-    *Michel Deslierres  June 15, 2020 */*
+    *Michel Deslierres  June 15, 2020 */
   
-  **#include <Arduino.h>**  *// needed in PlatformIO*
+  #include <Arduino.h>  // needed in PlatformIO*
   
-  **void** setup() {
+  void setup() {
   }
   
-  **void** loop() {
+  void loop() {
     Serial.println("Hello XIAO!");
     delay(2000);
   }
 ```
 
-Click on the **`Build`** button of the PIO toolbar.
+Click on the **`Build`** button of the PlatformIO toolbar.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile.jpg)
 
@@ -174,13 +174,13 @@ A terminal window will be opened in which the output from the compiler and linke
 
 ![https://sigmdel.ca/michel/arrow-up.png](https://sigmdel.ca/michel/arrow-up.png)
 
-Once a project can be compiled without error, it is possible to upload the firmware to the XIAO. This is done by clicking on the **`PlatformIO: Upload`** icon on the status bar which is the right pointing arrow beside the home and compile icons. PIO should then reuse the terminal window to show the status of the upload and then to show the serial monitor with the XIAO output, if the upload was successful.
+Once a project can be compiled without error, it is possible to upload the firmware to the XIAO. This is done by clicking on the **`PlatformIO: Upload`** icon on the status bar which is the right pointing arrow beside the home and compile icons. PlatformIO should then reuse the terminal window to show the status of the upload and then to show the serial monitor with the XIAO output, if the upload was successful.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg)
 
 It may be necessary to manually start the serial monitor. The **`PlatformIO: Serial Monitor`** icon is the upward pointing plug on the status bar. Once the serial monitor is connected, the "Hello XIAO!" message from the board should be printed every second. The blue LED labeled T (for UART TX activity) will flash as the XIAO prints out it's message to the serial port.
 
-Given the [double duty performed by the USB port of the XIAO](https://sigmdel.ca/michel/ha/xiao/seeeduino_xiao_01_en.html#download_problem), there is a good chance that PIO will fail at a first attempt to upload the firmware.
+Given the [double duty performed by the USB port of the XIAO](https://sigmdel.ca/michel/ha/xiao/seeeduino_xiao_01_en.html#download_problem), there is a good chance that PlatformIO will fail at a first attempt to upload the firmware.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile4.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile4.jpg)
 
@@ -215,7 +215,7 @@ Note : For the XIAO Seeduino SAMD21 boards the pin numbers 4 and 5 are SDA and S
 
 ## ****Installing SSD1306 OLED and GFX Library****
 
-Now navigate to the **`Libraries`** section in **`PIO Home`** and type “Adafruit GFX” in the search box.
+Now navigate to the **`Libraries`** section in **`PlatformIO Home`** and type “Adafruit GFX” in the search box.
 
 ![Untitled](images/Untitled%203.png)
 
