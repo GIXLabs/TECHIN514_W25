@@ -181,7 +181,7 @@ Once a project can be compiled without error, it is possible to upload the firmw
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg)
 
-It may be necessary to manually start the serial monitor. The **`PlatformIO: Serial Monitor`** icon is the upward pointing plug on the status bar. Once the serial monitor is connected, the "Hello XIAO!" message from the board should be printed every second. The blue LED labeled T (for UART TX activity) will flash as the XIAO prints out it's message to the serial port.
+It may be necessary to manually start the serial monitor. The **`PlatformIO: Serial Monitor`** icon is the upward pointing plug on the status bar. Once the serial monitor is connected, the "Hello XIAO!" message from the board should be printed every second.
 
 Given the [double duty performed by the USB port of the XIAO](https://sigmdel.ca/michel/ha/xiao/seeeduino_xiao_01_en.html#download_problem), there is a good chance that PlatformIO will fail at a first attempt to upload the firmware.
 
