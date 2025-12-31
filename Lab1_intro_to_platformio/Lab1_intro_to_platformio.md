@@ -181,63 +181,51 @@ Once a project can be compiled without error, it is possible to upload the firmw
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile3.jpg)
 
-It may be necessary to manually start the serial monitor. The **`PlatformIO: Serial Monitor`** icon is the upward pointing plug on the status bar. Once the serial monitor is connected, the "Hello XIAO!" message from the board should be printed every second.
+It may be necessary to manually start the serial monitor. The **`PlatformIO: Serial Monitor`** icon is the upward pointing plug on the status bar. Once the serial monitor is connected, the "Hello XIAO!" message from the board should be printed every 2 seconds.
 
 Given the [double duty performed by the USB port of the XIAO](https://sigmdel.ca/michel/ha/xiao/seeeduino_xiao_01_en.html#download_problem), there is a good chance that PlatformIO will fail at a first attempt to upload the firmware.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile4.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_compile4.jpg)
 
-In that case ground the XIAO RST (reset) pad twice in quick succession and the board should then be in "bootloader" mode waiting for the new version of the firmware. When the XIAO is in this mode, it shows up as a storage device named Arduino as can be seen below.
+In that case ground the XIAO R (reset) pad twice in quick succession and the board should then be in "bootloader" mode waiting for the new version of the firmware.
 
-![https://sigmdel.ca/michel/ha/xiao/img/xiao_uf2.jpg](https://sigmdel.ca/michel/ha/xiao/img/xiao_uf2.jpg)
+# 3. LED and Switch
 
-Uploading will work when the XIAO is in this mode.
+Now that our Hello World project is setup lets try to use external libraries in PlatformIO. We will try to use a debouncing library to handle inputs from a switch/button.
 
-# 3. OLED Display
+## ****LED and Switch Wiring****
 
-Now that our Hello World project is setup lets try to use external libraries in PlatformIO. We will try to use the Arduino libraries for the SSD1306 OLED display.
+To Do: describe wiring of LED and switch
 
-## ****OLED Display SSD1306 Pin Wiring****
-
-Because the OLED display uses I2C communication protocol, wiring is very simple. You can use the following table as a reference.
-
-| Pin | SAMD21  |
+| Pin | ESP32C3 |
 | --- | ------- |
-| Vin | 3.3V    |
-| GND | GND     |
-| SCL | GPIO 22 |
-| SDA | GPIO 21 |
+| Switch | GPIO D2 |
+| LED | GPIO D10 |
 
-Alternatively, you can follow the next schematic diagram to wire the ESP32 to the OLED display.
+Alternatively, you can follow the next schematic diagram to wire the ESP32 to the switch and LED.
 
 ![Untitled](images/Untitled%201.png)
 
-Note : For the XIAO Seeduino SAMD21 boards the pin numbers 4 and 5 are SDA and SCL respectively
+## ****Installing Bounce2 Library****
 
-![Untitled](images/Untitled%202.png)
-
-## ****Installing SSD1306 OLED and GFX Library****
-
-Now navigate to the **`Libraries`** section in **`PlatformIO Home`** and type “Adafruit GFX” in the search box.
+Now navigate to the **`Libraries`** section in **`PlatformIO Home`** and type “Bounce2” in the search box.
 
 ![Untitled](images/Untitled%203.png)
 
-You should be able to see the **`Adafruit GFX Library`** and the **`Adafruit SSD1306 Library`**
+You should be able to see the **Bounce2** library by Thomas O Fredericks.
 
-Install both the libraries by adding them to our project
+Install the library by adding it to our project
 
 ![Untitled](images/Untitled%204.png)
 
 Once added you should be able to see the library entries in the **`platform.ini`** file like this:
 
-```cpp
-[env:seeed_xiao]
-platform = atmelsam
-board = seeed_xiao
+```
+[env:seeed_xiao_esp32c3]
+platform = espressif32
+board = seeed_xiao_esp32c3
 framework = arduino
-lib_deps = 
-	adafruit/Adafruit GFX Library@^1.11.9
-	adafruit/Adafruit SSD1306@^2.5.9
+lib_deps = thomasfredericks/Bounce2@^2.70
 ```
 
 A bit more about SemVer: here is the [cheatsheet](https://devhints.io/semver)
@@ -246,46 +234,72 @@ A bit more about SemVer: here is the [cheatsheet](https://devhints.io/semver)
 
 ### Importing
 
-First, you need to import the necessary libraries. The **`Wire`** library to use I2C and the Adafruit libraries to write to the display: **`Adafruit_GFX`** and **`Adafruit_SSD1306`**.
+First, you need to import the necessary library. The debouncing library for the switch called Bounce2
 
 ```cpp
-#include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include <Bounce2.h>
 ```
 
 ### Usage in code
 
 ```cpp
 #include <Arduino.h>
-#include <Wire.h>
-#include <SPI.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
- 
-Adafruit_SSD1306 display;
- 
-void setup(){
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-  display.clearDisplay();
- 
-  display.drawLine(0, 16, 128, 16, WHITE);
+#include <Bounce2.h>
 
-  // Show "Hello world!" on the display.
-  display.setTextSize(1);
-  display.setTextColor(WHITE);
-  display.setCursor(0, 0);
-  display.println("Hello world!");
-  display.display();
+// Pin definitions
+const int SWITCH_PIN = D2;  // GPIO switch pin
+const int LED_PIN = D10;    // GPIO LED pin
+
+// Debounce object
+Bounce2::Button button = Bounce2::Button();
+
+// Variable to track LED state
+bool ledState = false;
+
+void setup() {
+  // Initialize Serial for logging
+  Serial.begin(115200);
+  delay(1000);  // Wait for serial to initialize
+  
+  Serial.println("\n\n=== LED Switch Control Initialized ===");
+  Serial.println("XIAO ESP32C3 - Tactile Switch with LED Control");
+  Serial.println("=====================================\n");
+  
+  // Configure LED pin
+  pinMode(LED_PIN, OUTPUT);
+  digitalWrite(LED_PIN, LOW);  // Start with LED off
+  
+  // Configure debounced button
+  button.attach(SWITCH_PIN, INPUT_PULLUP);  // Use internal pull-up
+  button.interval(50);  // Debounce interval in ms
+  button.setPressedState(LOW);  // Button is pressed when LOW
+  
+  Serial.println("Setup complete. Waiting for button presses...\n");
 }
- 
-void loop(){
-  Serial.println("Hello XIAO!");
-  delay(2000);
+
+void loop() {
+  // Update button state
+  button.update();
+  
+  // Check if button was pressed
+  if (button.pressed()) {
+    // Toggle LED state
+    ledState = !ledState;
+    digitalWrite(LED_PIN, ledState ? HIGH : LOW);
+    
+    // Log the state change
+    Serial.print("Button pressed - LED is now: ");
+    Serial.println(ledState ? "ON" : "OFF");
+  }
+  
+  // Small delay to prevent overwhelming the serial output
+  delay(10);
 }
 ```
 
 # 4. Import Arduino Project
+To Do: change to import some other project instead of the wearable project
+
 You can import an Arduino project by pressing the “Import Arduino Project” button and pointing it to the folder.
 ![](images/import_1.png)
 Then, a warning will show up.
