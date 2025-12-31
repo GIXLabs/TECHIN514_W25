@@ -154,6 +154,7 @@ Let's put what is probably the simplest working XIAO program in **`main.cpp`**.
   #include <Arduino.h>  // needed in PlatformIO*
   
   void setup() {
+    Serial.begin(115200);
   }
   
   void loop() {
