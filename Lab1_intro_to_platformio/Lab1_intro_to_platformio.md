@@ -192,13 +192,13 @@ Here is a pinout for the XIAO ESP32C3, which you may find helpful:
 
 Now navigate to the **`Libraries`** section in **`PlatformIO Home`** and type “Bounce2” in the search box.
 
-![library_search](images/library_installation.png)
+![Library search](images/library_installation.png)
 
 You should be able to see the **Bounce2** library by Thomas O Fredericks.
 
-Install the library by adding it to our project
+Install the library by adding it to your project
 
-![Untitled](images/Untitled%204.png)
+![Library add to project](images/library_add_to_project.png)
 
 Once added you should be able to see the library entries in the **`platform.ini`** file like this:
 
