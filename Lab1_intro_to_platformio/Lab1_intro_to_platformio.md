@@ -24,8 +24,13 @@ In this lab, students will:
 Before we dive into Platform IO, ensure you have the following ready:
 
 - **Visual Studio Code (VSCode)** installed on your Windows, MacOS, or Linux computer.
-- **Your Wearable Device**: Make sure you have the wearable device you made last quarter. We'll be programming with it during this lab.
-- **USB-C cable**: Make sure you can connect your wearable device to your laptop
+- **A XIAO ESP32 C3, or similar microcontroller**
+- **Tactile switch**
+- **LED**
+- **Current-limiting resistor for LED**
+- **Jumper wires or solidcore wire**
+- **Solderless breadboard**
+- **USB-C cable**: Make sure you can connect your microcontroller to your laptop
 
 ### **Installing Platform IO**
 
