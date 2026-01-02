@@ -59,26 +59,23 @@ Before we dive into Platform IO, ensure you have the following ready:
 
 ## PlatformIO Prerequisites
 
-Adding the PlatformIO extension in the editor is quite simple, just follow the [installation instructions](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation). Once PlatformIO is added, it adds a toolbar to the status bar at the bottom of the editor.
+Adding the PlatformIO extension in the editor is quite simple, just follow the [installation instructions](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation). Once PlatformIO is added, it adds a toolbar to the status bar at the bottom of the editor. This bar might not show up until you create a new project.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformIO_toolbar.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformIO_toolbar.jpg)
 
-References to the **`Home`**, **`Build`**, **`Upload`** and **`Serial Monitor`** buttons will be made in what follows. The [toolbar documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#id4) gives the keyboard shortcuts for these buttons.
+We will use te **`Home`**, **`Build`**, **`Upload`** and **`Serial Monitor`** buttons later in this tutorial. The [toolbar documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#id4) gives the keyboard shortcuts for these buttons.
 
 The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar microcontroller), and an appropriate USB cable to connect to the board. The XIAO requires a USB-C type cable.
 
 ## Installing the XIAO Board Definition
 
-![https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg)
+![Board search](images/board_search.png)
 
 1. Go to the PlatformIO home page by clicking on the house icon on the status bar at the bottom of the editor window. It is the house icon on the purple or blue bar.
 2. Bring up the **`Board Explorer`** in PlatformIO by clicking on the Boards icon in the left panel.
 3. Enter **`XIAO`** in the **`Search Board...`** search box and press Enter.
 4. Click on the **`Espressif 32`** platform
-
-![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg)
-
-1. Click on the **Install** button in the **`Espressif 32`** page.
+5. Click on the **Install** button in the **`Espressif 32`** page.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg)
 
