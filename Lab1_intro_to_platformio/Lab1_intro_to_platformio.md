@@ -78,7 +78,7 @@ The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar mi
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam.jpg)
 
-1. Click on the **Install** button in the **`Espressif 32`** page. Not surprisingly, this will install the platform.
+1. Click on the **Install** button in the **`Espressif 32`** page.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_platforms_atmelsam_done.jpg)
 
@@ -192,7 +192,7 @@ Here is a pinout for the XIAO ESP32C3, which you may find helpful:
 
 Now navigate to the **`Libraries`** section in **`PlatformIO Home`** and type “Bounce2” in the search box.
 
-![Untitled](images/Untitled%203.png)
+![library_search](images/library_installation.png)
 
 You should be able to see the **Bounce2** library by Thomas O Fredericks.
 
