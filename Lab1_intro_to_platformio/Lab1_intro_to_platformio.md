@@ -191,9 +191,9 @@ Now that our Hello World project is setup lets try to use external libraries in 
 | Switch | GPIO D2 |
 | LED | GPIO D10 |
 
-Alternatively, you can follow the next schematic diagram to wire the ESP32 to the switch and LED.
+Here is a pinout for the XIAO ESP32C3, which you may find helpful:
 
-![Untitled](images/Untitled%201.png)
+![XIAO ESP32C3 Pinout](https://files.seeedstudio.com/wiki/XIAO_WiFi/pin_map-2.png)
 
 ## ****Installing Bounce2 Library****
 
