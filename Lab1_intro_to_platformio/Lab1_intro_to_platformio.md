@@ -58,8 +58,6 @@ Adding the PlatformIO extension in the editor is quite simple, just follow the 
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformIO_toolbar.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformIO_toolbar.jpg)
 
-![https://sigmdel.ca/michel/ha/xiao/img/usb-c.jpg](https://sigmdel.ca/michel/ha/xiao/img/usb-c.jpg)
-
 References to the **`Home`**, **`Build`**, **`Upload`** and **`Serial Monitor`** buttons will be made in what follows. The [toolbar documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#id4) gives the keyboard shortcuts for these buttons.
 
 The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar microcontroller), and an appropriate USB cable to connect to the board. The XIAO requires a USB-C type cable.
