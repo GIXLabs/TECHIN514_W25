@@ -130,12 +130,9 @@ framework = arduino
 monitor_speed = 115200
 ```
 
-see [Seeeduino](https://docs.platformio.org/en/latest/boards/atmelsam/seeed_xiao.html?utm_medium=piohome&utm_source=platformio) for details.
+See [Seeeduino](https://docs.platformio.org/en/latest/boards/atmelsam/seeed_xiao.html?utm_medium=piohome&utm_source=platformio) for details.
 
 ## Compile a Project
-
-![https://sigmdel.ca/michel/arrow-up.png](https://sigmdel.ca/michel/arrow-up.png)
-
 Let's put what is probably the simplest working XIAO program in **`main.cpp`**.
 
 ```cpp
