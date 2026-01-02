@@ -104,11 +104,9 @@ This will create the project which consists of a number of directories and files
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg)
 
-Two files are important at this juncture. The **`main.cpp`** source directory in **`.../hello_xiao/src/`** which contains the typical Arduino sketch structure. Note how PlatformIO explicitly includes the **`Arduino.h`** header file in the project.
+The **`main.cpp`** source directory in **`.../hello_xiao/src/`** contains the typical Arduino sketch structure. Note how PlatformIO explicitly includes the **`Arduino.h`** header file in the project.
 
-![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_4.jpg)
-
-Check carefully the content of the project configuration file. They should look something like this:
+Check carefully the content of the project configuration file `platformio.ini`. They should look something like this:
 
 ```yaml
 [env:seeed_xiao_esp32c3]
