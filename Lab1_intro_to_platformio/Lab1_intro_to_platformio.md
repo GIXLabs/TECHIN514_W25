@@ -45,7 +45,7 @@ Before we dive into Platform IO, ensure you have the following ready:
 - **Adding Extensions and Plugins**: Explore the Extensions marketplace in VSCode for relevant add-ons
   - GitHub CoPilot (free for students on GitHub when registered with your UW ID)
   - Git integration
-  - code linters
+  - Code linters
   - Arduino specific extensions
 
 # 2. HELLO WORLD -  XIAO ESP32 C3
@@ -180,7 +180,7 @@ In that case ground the XIAO R (reset) pad twice in quick succession and the boa
 
 # 3. LED and Switch
 
-Now that our Hello World project is setup lets try to use external libraries in PlatformIO. We will try to use a debouncing library to handle inputs from a switch/button. You will wire a tactile switch to pin D2 on the XIAO (wire the other side to ground, active low), and an LED (with a current limiting resistor) to pin D10. The code will listen for the tactile switch to be clicked, then toggle whether the LED is on or off. The state will be published over the Serial terminal.
+Now that our Hello World project is setup lets try to use external libraries in PlatformIO. You will use a debouncing library to handle inputs from a switch/button. Wire a tactile switch to pin D2 on the XIAO (wire the other side to ground, active low), and an LED (with a current limiting resistor) to pin D10. The code will listen for the tactile switch to be clicked, then toggle whether the LED is on or off. The state will be published over the Serial terminal.
 
 ## ****LED and Switch Wiring****
 
@@ -214,8 +214,6 @@ board = seeed_xiao_esp32c3
 framework = arduino
 lib_deps = thomasfredericks/Bounce2@^2.70
 ```
-
-A bit more about SemVer: here is the [cheatsheet](https://devhints.io/semver)
 
 ## Importing and using the libraries
 
