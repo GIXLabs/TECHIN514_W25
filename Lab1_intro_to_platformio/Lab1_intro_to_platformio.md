@@ -17,7 +17,7 @@ In this lab, students will:
 
 1. **Learn to Use PlatformIO for Project Management**: Gain practical skills in managing and organizing hardware/software lab projects using PlatformIO's advanced features.
 2. **Create and Test a "Hello World" Project**: Develop a basic "Hello World" program in PlatformIO.
-3. **Import and Modify an Existing Project**: Learn to import and work with an existing project, specifically focusing on the wearable device built in the previous quarter.
+3. **Import and Use Existing Libraries and Dependencies**: Learn to import and work with an existing libraries.
 
 ### **Lab Prerequisites**
 
@@ -28,7 +28,7 @@ Before we dive into Platform IO, ensure you have the following ready:
 - **Tactile switch**
 - **LED**
 - **Current-limiting resistor for LED**
-- **Jumper wires or solidcore wire**
+- **Jumper wires or solid-core wire**
 - **Solderless breadboard**
 - **USB-C cable**: Make sure you can connect your microcontroller to your laptop
 
@@ -69,8 +69,6 @@ The only hardware requirements are your computer, a XIAO ESP32 C3 (or similar mi
 
 ## Installing the XIAO Board Definition
 
-![https://sigmdel.ca/michel/arrow-up.png](https://sigmdel.ca/michel/arrow-up.png)
-
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_boards_xiao.jpg)
 
 1. Go to the PlatformIO home page by clicking on the house icon on the status bar at the bottom of the editor window. It is the house icon on the purple or blue bar.
@@ -90,13 +88,12 @@ And that completes the installation of a platform. PlatformIO will know where to
 
 ## Create a Project
 
-![https://sigmdel.ca/michel/arrow-up.png](https://sigmdel.ca/michel/arrow-up.png)
-
-![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_1.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_1.jpg)
-
 1. Go to the PlatformIO home page by clicking on the PlatformIO home button in the PlatformIO toolbar on the status bar at the bottom of the editor window.
 2. Go to the **`Projects`** page in PlatformIO by clicking on the **`Projects`** icon in the left panel.
 3. Bring up the **`Project Wizard`** in PlatformIO by clicking on the **`+ Create New Project`** button in the top right of the **`Projects`** page.
+
+  ![New Project](images/new_project.png)
+
 4. Enter a project name in the **`Name`** field. Here I entered **`hello_xiao`**.
 5. Select the **`Board`**. The full name is Seeed Studio XIAO ESP32C3 but you can enter a part of the name and a list of matching boards will be displayed in the drop-down list.
 6. Click on the full board name in the list. Not visible in the above image, the **`Framework`** will automatically be set to Arduino.
@@ -165,8 +162,6 @@ A terminal window will be opened in which the output from the compiler and linke
 Yours may say it failed with one error. Scroll up in the terminal to where the Traceback begins and look for "No module named 'intelhex'". If you see this, open a new terminal (icon on the bottom toolbar that looks like >_), and type in ```python -m pip install intelhex``` and press enter. Click the ***`Build`** button again on the bottom toolbar.
 
 ## Upload a Project
-
-![https://sigmdel.ca/michel/arrow-up.png](https://sigmdel.ca/michel/arrow-up.png)
 
 Once a project can be compiled without error, it is possible to upload the firmware to the XIAO. This is done by clicking on the **`PlatformIO: Upload`** icon on the status bar which is the right pointing arrow beside the home and compile icons. PlatformIO should then reuse the terminal window to show the status of the upload and then to show the serial monitor with the XIAO output, if the upload was successful.
 
