@@ -100,15 +100,6 @@ And that completes the installation of a platform. PlatformIO will know where to
 7. Leaving **`Location`** checked will mean that the project will be saved in a directory called **`hello_xiao`** in the PlatformIO projects directory. The default location of that folder is **`/home/*user*/Documents/PlatformIO/Projects`**.
 8. If that location is acceptatble, click on the **Finish** button.
 
-I prefer to group board specific projects in a directory named after the board.
-
-![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_2.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_2.jpg)
-
-1. I unchecked **Location**.
-2. Then I clicked on the **`Projects`** directory in the **`Places`** section of teh left panel of the file explorer.
-3. Then I clicked on the desired subdirectory named **`xiao`** which I had created previously. Otherwise I could have clicked on the **New** button to create the subdirectory.
-4. Click on the **Finish** button.
-
 This will create the project which consists of a number of directories and files that are displayed in the **`EXPLORER`** pane on the left.
 
 ![https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg](https://sigmdel.ca/michel/ha/xiao/img/platformio_hello_create_3.jpg)
