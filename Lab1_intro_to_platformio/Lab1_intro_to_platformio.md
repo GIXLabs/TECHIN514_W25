@@ -274,10 +274,12 @@ void loop() {
 }
 ```
 
-# 4. Import Arduino Project
-To Do: change to import some other project instead of the wearable project
+# 4. Optional Activity.  Import an Arduino Project
+
+PlatformIO has built-in tools to import existing Arduino projects.  If you have one from another class or project, try to import and build it with PlatformIO.  Or find one on the internet.
 
 You can import an Arduino project by pressing the “Import Arduino Project” button and pointing it to the folder.
+
 ![](images/import_1.png)
 Then, a warning will show up.
 ![](images/import_2.png)
