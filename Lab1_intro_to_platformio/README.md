@@ -13,13 +13,5 @@ While the tutorial is specific to setting up the XIAO ESP32C3, the setup for mos
     3. [**Arduino Nano RP2040 Connect with Platform IO**](https://docs.platformio.org/en/stable/boards/raspberrypi/nanorp2040connect.html#id1)
     4. **[Adafruit QT Py ESP32-S2](https://docs.platformio.org/en/stable/boards/espressif32/adafruit_qtpy_esp32s2.html#id1)**
 
-# What to Submit on Canvas
-
-1. Import the code for your wearables project into PlatformIO.
-2. Install the necessary libraries and run the code using PlatformIO
-3. Upload the code to GitHub in your own repository and share the link
-4. Submit screenshots of the following:
-    1. Build Log for PlatformIO
-    2. Serial Monitor Output
-    3. GitHub repository screenshot
-    4. GitHub repository link
+# Deliverables
+See Canvas for what to turn in.
