@@ -1,6 +1,19 @@
-## Lab 2: Component Selection and Surface Mount Soldering
+# Lab 2: Component Selection and Surface Mount Soldering
 
 **This lab has two sections: analytical and physical**
+
+## Goals
+
+- How to generate a bill of materials (BOM) in KiCAD
+- Learn about voltage regulators
+- How to read data sheets
+- Understand surface mount (SMD) comonent configurations and sizes
+- Soldering surface mount components
+- Read voltage on a microcontroller
+
+## Deliverables
+
+Refer to the Canvas assignment [EE Fundamentals Lab](https://canvas.uw.edu/courses/1860902/assignments/10960940) for what you need to submit for this lab.
 
 ## Lab Prerequisites
 
@@ -9,38 +22,38 @@ Before this lab, make sure you have the following ready:
 * KiCAD installation on your laptop for PCB design
 * **USB-C cable**: Make sure you can connect ESP32 to your laptop
 
-## Section 1: analyse and component selection
+## Section 1: Analysis and Component Selection
 
-The first part is analytical, using the regulators schamtic.
+Step 1: Make sure you have cloned the TECHIN514_W26 repo to your computer. Open KiCAD, click on File and select Open Project (Ctrl+O). Navigate to where you have the repo saved on your computer. Go into the Lab 2 folder and select the regulator_demo folder. Inside of there open the regulators KiCAD project file. If you are prompted with a message about the import select Open Anyway.
 
-Step 1: Geneate a BOM using KiCAD and save to a CSV
+Step 2: Generating a BOM using KiCAD
 
-1. Open the file *regulators.kicad_pro* with KiCAD, and double-click the _sch tab
+1. Once you have imported the KiCAD prooject, double-click the _sch file as shown below:
 
    ![1704914601583](image/Lab2_component_selection/1704914601583.png)
-2. Then click Tool -> Generate BOM to generate the spreadsheet:
+2. Then click Tool -> Generate Legacy Bill of Materials...
 
    ![1704914658150](image/Lab2_component_selection/1704914658150.png)
 3. Select *bom_csv_grouped_extra* on the left then click *Generate
    ![1704914833159](image/Lab2_component_selection/1704914833159.png)*
 4. The file should appear under the same directory as the schematic file, showing on the screen
    ![1704914904565](image/Lab2_component_selection/1704914904565.png)
-5. Open the CSV file, and fill in all UNKNOWN values based on your calculation mentioned below:
+5. Open the CSV file, notice that R1 through R8 all have unknown values. You will calculate these values based on the equations in the datasheets. Further instructions on how to do this are in the next step:
    ![1704914966570](image/Lab2_component_selection/1704914966570.png)
 
-Step 2: Datasheet reading, calculation, and component selection
+Step 3: Datasheet reading, calculation, and component selection
 
-* You'll choose the necessary resistors to adjust output voltage of your regulators and a matching current-limiting resistors for your LEDs.
-  * For your regulators, set the first output voltage (VOUT1, on the left) to 2V + 0.01 * the day of the month you were born. So if you were born on the 15th, you should set the voltage to 2.15V;
-  * For the second output voltage (VOUT2, in the middle), add 0.1 to the first output voltage. So if you were born on the 15th, set it to 2.25V;
-  * For the third output voltage (VOUT3, on the right), set it to the same voltage as VOUT2.
+* You'll choose the necessary resistors to adjust output voltage of your regulators and matching current-limiting resistors for your LEDs.
+  * For the LM317 regulator (the one with 0805 components and the left most circuit on the PCB), determine the resistor values to make the output voltage (VOUT1) equal to 2V + 0.01 * the day of the month you were born. So if you were born on the 15th, you should set the voltage to 2.15V;
+  * For the TPS79301 regulator (0603 components, middle circuit on the PCB), determine the resistor values to make the output voltage (VOUT2) equal to 0.1 + VOUT1. For example, if you were born on the 15th set it to 2.25V;
+  * For the MIC5377 regulator (0402 components, right most circuit on the PCB), determine the resistor values so the output voltage (VOUT3) is equal to VOUT2.
 
 Here's a brief instruction about how to read a datasheet, using the LM317 regulator as an example:
 
-1. Check the Terminal Configuration and Functions to know what pins are for on this device;
+1. Check the Terminal Configuration and Functions to determine the pinout for the device.
 2. Check the Speficiations (Specs), especially Absolute Maximum Ratings of the device. This will ensure you won't destroy the device with high voltage/current;
    ![1704915396628](image/Lab2_component_selection/1704915396628.png)
-3. For regulators, there will be a section of *Application and Implementation* to demonstrate how to assemble it with resistors and capacitors. Typically, there should be an equation about how the output voltage is set: **the selection of the resistors will affect the output voltage**, and this is what your calculation should aim for
+3. For regulators and most other types of components, there will be a section called *Application and Implementation* or *Typical Application Circuit*. This demonstrates how to assemble it with resistors and capacitors. For voltage regulators, there should be an equation about how the output voltage is set: **the selection of the resistors will affect the output voltage.**
    ![1704915523873](image/Lab2_component_selection/1704915523873.png)
 
    There could be other details on the datasheet that might help your component selection. Please check them out carefully.
