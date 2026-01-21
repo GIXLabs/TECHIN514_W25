@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="E">
   <design>
-    <source>/Users/bowenzhao/Projects/TECHIN514_W24/Lab2_component-selection/regulator_demo/regulators.kicad_sch</source>
-    <date>Wednesday, January 10, 2024 at 04:06:31 PM</date>
-    <tool>Eeschema 7.0.10</tool>
+    <source>C:\Users\zubin\Documents\TECHIN514_W26\Lab2_component-selection\regulator_demo\regulators.kicad_sch</source>
+    <date>2026-01-07T11:04:45-0800</date>
+    <tool>Eeschema 9.0.2</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -27,220 +27,320 @@
     <comp ref="C1">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e838e17f-2437-403d-9b16-f695b4008296</tstamps>
     </comp>
     <comp ref="C2">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0a203a70-f82b-4264-97de-9849539409b7</tstamps>
     </comp>
     <comp ref="C3">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eeeeae86-4f51-46db-a229-7dbba7eb7efc</tstamps>
     </comp>
     <comp ref="C4">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0c034403-3631-48ad-9fff-674611a05a46</tstamps>
     </comp>
     <comp ref="C5">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6ed80c83-c1a3-4894-a113-bdb2c39d4205</tstamps>
     </comp>
     <comp ref="C6">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Unpolarized capacitor"/>
       <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>12764cd9-f4ae-4ca6-904f-dbec4a79204c</tstamps>
     </comp>
     <comp ref="D1">
-      <value>LED</value>
+      <value>LS R976</value>
       <footprint>LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>393e480f-6b1a-4d35-a16d-5426663bf596</tstamps>
     </comp>
     <comp ref="D2">
-      <value>LED</value>
+      <value>LTST-C191KRKT</value>
       <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="LED" description="Light emitting diode"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Light emitting diode"/>
       <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>eb552d55-5a03-4790-a8f8-afecb64b026f</tstamps>
     </comp>
     <comp ref="J1">
       <value>n.m.</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1608e13f-1f59-494c-89c7-3fc0bebd1890</tstamps>
     </comp>
     <comp ref="J2">
       <value>n.m.</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8e3e7ccd-8bdc-4fde-b1f4-0d73e95a85dd</tstamps>
     </comp>
     <comp ref="J3">
       <value>n.m.</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1438f22f-0409-4235-b48a-7df0ce86a3b8</tstamps>
     </comp>
     <comp ref="J4">
       <value>n.m.</value>
       <footprint>Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Connector" part="Conn_01x02_Pin" description="Generic connector, single row, 01x02, script generated"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Generic connector, single row, 01x02, script generated"/>
       <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>670c20eb-57c7-43a4-a65d-c1f9093ee3b5</tstamps>
     </comp>
     <comp ref="R1">
       <value>UNKNOWN1</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>983dfb81-500d-40c4-8d32-9b5e1ff4946d</tstamps>
     </comp>
     <comp ref="R2">
       <value>UNKNOWN2</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>11b956e3-199f-4039-a336-d44d1692cb01</tstamps>
     </comp>
     <comp ref="R3">
       <value>UNKNOWN4</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6578055c-546b-41c2-b521-15b670b6ecce</tstamps>
     </comp>
     <comp ref="R4">
       <value>UNKNOWN5</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1e0dda72-b0c8-4bb8-bf7a-7ede92e0b528</tstamps>
     </comp>
     <comp ref="R5">
       <value>UNKNOWN7</value>
       <footprint>Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>01d9acd6-e41f-463f-afe1-44e0b9c2fb14</tstamps>
     </comp>
     <comp ref="R6">
       <value>UNKNOWN8</value>
       <footprint>Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>121441f4-feac-4283-b7e6-5b37441d912f</tstamps>
     </comp>
     <comp ref="R7">
       <value>UNKNOWN3</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1c45ef20-30b7-488e-ac34-9155dc4e21c0</tstamps>
     </comp>
     <comp ref="R8">
       <value>UNKNOWN6</value>
       <footprint>Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</footprint>
+      <fields>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="Resistor"/>
       <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>57aadf0a-eb8b-4517-93e5-11b8e45f77dd</tstamps>
     </comp>
@@ -248,11 +348,16 @@
       <value>LM317_SOT-223</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/lm317.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm317.pdf</field>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Regulator_Linear" part="LM317_SOT-223" description="1.5A 35V Adjustable Linear Regulator, SOT-223"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="1.5A 35V Adjustable Linear Regulator, SOT-223"/>
       <property name="ki_keywords" value="Adjustable Voltage Regulator 1A Positive"/>
+      <property name="ki_fp_filters" value="SOT?223*TabPin2*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b07b4b62-a4b3-4217-9f51-45ff6ecf2306</tstamps>
     </comp>
@@ -260,11 +365,16 @@
       <value>TPS79301-EP</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-6</footprint>
       <datasheet>http://www.ti.com/lit/ds/symlink/tps79333-ep.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps79333-ep.pdf</field>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Regulator_Linear" part="TPS79301-EP" description="200mA UltraLow-Noise, High-Precision, Fast RF, Low Drop-out Voltage Regulator, Adjustable Output, SOT-23"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="200mA UltraLow-Noise, High-Precision, Fast RF, Low Drop-out Voltage Regulator, Adjustable Output, SOT-23"/>
       <property name="ki_keywords" value="LDO Voltage Regulator 200mA adjustable"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>bfbf894d-013b-4c05-a926-485f86f34013</tstamps>
     </comp>
@@ -272,11 +382,16 @@
       <value>MIC5377</value>
       <footprint>Package_TO_SOT_SMD:SOT-353_SC-70-5</footprint>
       <datasheet>http://ww1.microchip.com/downloads/en/DeviceDoc/mic5365.pdf</datasheet>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-353_SC-70-5</field>
+        <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/mic5365.pdf</field>
+        <field name="Description"/>
+      </fields>
       <libsource lib="Regulator_Linear" part="MIC5366-3.3YC5" description="150mA Low-dropout Voltage Regulator, Vout 3.3V, Output discharge circuit, Vin up to 5.5V, SC-70-5"/>
-      <property name="Sheetname" value=""/>
+      <property name="Sheetname" value="Root"/>
       <property name="Sheetfile" value="regulators.kicad_sch"/>
-      <property name="ki_description" value="150mA Low-dropout Voltage Regulator, Vout 3.3V, Output discharge circuit, Vin up to 5.5V, SC-70-5"/>
       <property name="ki_keywords" value="Micrel LDO voltage regulator"/>
+      <property name="ki_fp_filters" value="SOT*353*SC*70*"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ce3ba9e8-60a1-4d65-a80c-34d635c707bd</tstamps>
     </comp>
@@ -291,7 +406,9 @@
       <fields>
         <field name="Reference">J</field>
         <field name="Value">Conn_01x02_Pin</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x02, script generated</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
@@ -307,7 +424,9 @@
       <fields>
         <field name="Reference">C</field>
         <field name="Value">C</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -325,7 +444,9 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">LED</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
       </fields>
       <pins>
         <pin num="1" name="K" type="passive"/>
@@ -341,7 +462,9 @@
       <fields>
         <field name="Reference">R</field>
         <field name="Value">R</field>
+        <field name="Footprint"/>
         <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
       </fields>
       <pins>
         <pin num="1" name="" type="passive"/>
@@ -359,6 +482,7 @@
         <field name="Value">LM317_SOT-223</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
         <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm317.pdf</field>
+        <field name="Description">1.5A 35V Adjustable Linear Regulator, SOT-223</field>
       </fields>
       <pins>
         <pin num="1" name="ADJ" type="input"/>
@@ -377,6 +501,7 @@
         <field name="Value">MIC5366-3.3YC5</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-353_SC-70-5</field>
         <field name="Datasheet">http://ww1.microchip.com/downloads/en/DeviceDoc/mic5365.pdf</field>
+        <field name="Description">150mA Low-dropout Voltage Regulator, Vout 3.3V, Output discharge circuit, Vin up to 5.5V, SC-70-5</field>
       </fields>
       <pins>
         <pin num="1" name="VIN" type="power_in"/>
@@ -397,6 +522,7 @@
         <field name="Value">TPS79301-EP</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-6</field>
         <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tps79333-ep.pdf</field>
+        <field name="Description">200mA UltraLow-Noise, High-Precision, Fast RF, Low Drop-out Voltage Regulator, Adjustable Output, SOT-23</field>
       </fields>
       <pins>
         <pin num="1" name="IN" type="power_in"/>
@@ -410,17 +536,17 @@
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Connector.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\9.0\share\kicad\symbols\/Connector.kicad_sym</uri>
     </library>
     <library logical="Device">
-      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Device.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\9.0\share\kicad\symbols\/Device.kicad_sym</uri>
     </library>
     <library logical="Regulator_Linear">
-      <uri>/Applications/KiCad/KiCad.app/Contents/SharedSupport/symbols//Regulator_Linear.kicad_sym</uri>
+      <uri>C:\Program Files\KiCad\9.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="+VDC">
+    <net code="1" name="+VDC" class="Default">
       <node ref="C1" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -431,7 +557,7 @@
       <node ref="U3" pin="1" pinfunction="VIN" pintype="power_in"/>
       <node ref="U3" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="2" name="GND">
+    <net code="2" name="GND" class="Default">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C2" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
@@ -450,52 +576,52 @@
       <node ref="U2" pin="2" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="2" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="3" name="Net-(D1-A)">
+    <net code="3" name="Net-(D1-A)" class="Default">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="VO" pintype="power_out"/>
     </net>
-    <net code="4" name="Net-(D1-K)">
+    <net code="4" name="Net-(D1-K)" class="Default">
       <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
     </net>
-    <net code="5" name="Net-(D2-A)">
+    <net code="5" name="Net-(D2-A)" class="Default">
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
       <node ref="J3" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="OUT" pintype="power_out"/>
     </net>
-    <net code="6" name="Net-(D2-K)">
+    <net code="6" name="Net-(D2-K)" class="Default">
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="7" name="Net-(J4-Pin_2)">
+    <net code="7" name="Net-(J4-Pin_2)" class="Default">
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="J4" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="R5" pin="1" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="VOUT" pintype="power_out"/>
     </net>
-    <net code="8" name="Net-(R5-Pad2)">
+    <net code="8" name="Net-(R5-Pad2)" class="Default">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
     </net>
-    <net code="9" name="Net-(U1-ADJ)">
+    <net code="9" name="Net-(U1-ADJ)" class="Default">
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
       <node ref="U1" pin="1" pinfunction="ADJ" pintype="input"/>
     </net>
-    <net code="10" name="Net-(U2-FB)">
+    <net code="10" name="Net-(U2-FB)" class="Default">
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R4" pin="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="FB" pintype="input"/>
     </net>
-    <net code="11" name="unconnected-(U2-BP-Pad4)">
+    <net code="11" name="unconnected-(U2-BP-Pad4)" class="Default">
       <node ref="U2" pin="4" pinfunction="BP" pintype="passive"/>
     </net>
-    <net code="12" name="unconnected-(U3-NC-Pad4)">
+    <net code="12" name="unconnected-(U3-NC-Pad4)" class="Default">
       <node ref="U3" pin="4" pinfunction="NC" pintype="no_connect"/>
     </net>
   </nets>
