@@ -28,17 +28,20 @@ Refer to the canvas page [PCB Design Lab](https://canvas.uw.edu/courses/1860902/
 
 
 ## Instructions:
-For this lab, you will design your own [breakout board](https://soldered.com/learn/breakout-boards-what-are-they-and-why-you-should-use-them/) for a sensor assigned to you. Everyone in this class has used a breakout board; the accelerometer you used in your TECHIN512 final project was on a breakout board. You will need to create a circuit schematic and complete the PCB layout for your breakout board. Each student will be assigned an i<sup>2</sup>c sensor, a voltage regulator, and a footprint size (ex: 0805, 0603, 0402) for their resistors, capacitors, LEDs, etc. Each board will have three parts: the sensor, the voltage regulator, and the LED. Each of those parts has their own resistors or capacitors that you will need to determine for them to work properly. **Look in Canvas to see which sensor, voltage regulator, and footprint size has been assigned to you.**
+For this lab, you will design your own [breakout board](https://soldered.com/learn/breakout-boards-what-are-they-and-why-you-should-use-them/) for a sensor assigned to you. Everyone in this class has used a breakout board; the accelerometer you used in your TECHIN512 final project was on a breakout board. You will need to create a circuit schematic and complete the PCB layout for your breakout board. Each student will be assigned an i<sup>2</sup>c sensor and a voltage regulator. Each board will have three parts: the sensor, the voltage regulator, and the LED. Each of those parts has their own resistors or capacitors that you will need to determine for them to work properly. **Look in Canvas to see which sensor, voltage regulator, and footprint size has been assigned to you.**
 
 
 
 Some i<sup>2</sup>c sensors have the ability to do both i<sup>2</sup>c and SPI, you only need to do connections for i<sup>2</sup>c. Your board should have four header connections for Voltage, Ground, SDA, and SCL. If you cannot find the footprint/symbol for your components on [Digikey](https://www.digikey.com/), we recommend checking SnapEDA or UltraLibrarian. There are additional constraints for your board design listed below.
 
 ### Constraints
+- Your board must provide regulated power to your sensor and provide 0.1 pin headers to allow your sensor to be connected to a breadboard
 - Your board must have a power LED. If the board receives power, the LED turns on
-- Your board must use only surface mount (SMD) components
+- Your board must use only surface mount (SMD) components (except for the pin headers)
 - Your board must have a ground plane on the same side you are placing your components
 - The edgecuts (outline of the board) should not have any sharp corners
+- Your BOM must be complete include part numbers and package information
+- You may use any size passive components up to 0805 (e.g. 0603 or 0402)
 
 
 ## Example
