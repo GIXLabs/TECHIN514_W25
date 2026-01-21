@@ -35,7 +35,7 @@ For this lab, you will design your own [breakout board](https://soldered.com/lea
 Some i<sup>2</sup>c sensors have the ability to do both i<sup>2</sup>c and SPI, you only need to do connections for i<sup>2</sup>c. Your board should have four header connections for Voltage, Ground, SDA, and SCL. If you cannot find the footprint/symbol for your components on [Digikey](https://www.digikey.com/), we recommend checking SnapEDA or UltraLibrarian. There are additional constraints for your board design listed below.
 
 ### Constraints
-- Your board must have a power LED. When your board receives power, the LED turns on
+- Your board must have a power LED. If the board receives power, the LED turns on
 - Your board must use only surface mount (SMD) components
 - Your board must have a ground plane on the same side you are placing your components
 - The edgecuts (outline of the board) should not have any sharp corners
