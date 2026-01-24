@@ -24,6 +24,7 @@ Refer to the canvas page [PCB Design Lab](https://canvas.uw.edu/courses/1860902/
 - [Importing Symbols and Footprints](https://forum.kicad.info/t/how-to-get-a-downloaded-symbol-footprint-or-full-library-into-kicad-version-5/19485)
 - [SnapEDA footprint and symbol library](https://www.snapeda.com/)
 - [Ultra Librarian footprint and symbol library](https://www.ultralibrarian.com/)
+- [Tutorial video made by Kevin (he's the best)](https://www.youtube.com/watch?v=3yj_zioqfTA)
 
 ## Digikey Links to Components
 
