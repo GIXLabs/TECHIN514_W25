@@ -145,7 +145,7 @@ You will be prompted to give your app a nickname, you can give it any name you l
 The Firebase-ESP-Client Library mentioned in the previous link is deprecated. Install FirebaseClient library instead.
 ![](images/firebase_lib.png)
 
-Here is some example code you can run to see if you have set up your Firebase correctly. You will need to input information that you have previous set up such as WiFi credentials, user email and password, Firebase RTDB URL, and the API Key. This example code should upload test data of various types every fifteen seconds. Make sure to take a look at the code and try and understand what functions and methods it is using to upload data to Firebase. Alternatively, you can put it into your favorite LLM and have it understand it for you. 🤡
+Here is some example code you can run to see if you have set up your Firebase correctly. You will need to input information that you have previous set up such as WiFi credentials, user email and password, Firebase RTDB URL, and the API Key. This example code should upload test data once. Make sure to take a look at the code and try and understand what functions and methods it is using to upload data to Firebase. Alternatively, you can put it into your favorite LLM and have it understand it for you. 🤡
 
 ```arduino
 /**
