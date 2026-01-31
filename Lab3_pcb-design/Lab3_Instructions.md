@@ -24,7 +24,7 @@ Refer to the canvas page [PCB Design Lab](https://canvas.uw.edu/courses/1860902/
 - [Importing Symbols and Footprints](https://forum.kicad.info/t/how-to-get-a-downloaded-symbol-footprint-or-full-library-into-kicad-version-5/19485)
 - [SnapEDA footprint and symbol library](https://www.snapeda.com/)
 - [Ultra Librarian footprint and symbol library](https://www.ultralibrarian.com/)
-- [Tutorial video made by Kevin (he's the best)](https://www.youtube.com/watch?v=3yj_zioqfTA)
+- [Tutorial video made by Kevin](https://www.youtube.com/watch?v=3yj_zioqfTA)
 
 ## Digikey Links to Components
 
@@ -46,7 +46,7 @@ Refer to the canvas page [PCB Design Lab](https://canvas.uw.edu/courses/1860902/
 
 
 ## Instructions:
-For this lab, you will design your own [breakout board](https://soldered.com/learn/breakout-boards-what-are-they-and-why-you-should-use-them/) for a sensor assigned to you. Everyone in this class has used a breakout board; the accelerometer you used in your TECHIN512 final project was on a breakout board. You will need to create a circuit schematic and complete the PCB layout for your breakout board. Each student will be assigned an i<sup>2</sup>c sensor, a voltage regulator, and a footprint size (ex: 0805, 0603, 0402) for their resistors, capacitors, LEDs, etc. Each board will have three parts: the sensor, the voltage regulator, and the LED. Each of those parts has their own resistors or capacitors that you will need to determine for them to work properly. **Look in Canvas to see which sensor, voltage regulator, and footprint size has been assigned to you.**
+For this lab, you will design your own [breakout board](https://soldered.com/learn/breakout-boards-what-are-they-and-why-you-should-use-them/) for a sensor assigned to you. Everyone in this class has used a breakout board; the accelerometer you used in your TECHIN512 final project was on a breakout board. You will need to create a circuit schematic and complete the PCB layout for your breakout board. Each student will be assigned an i<sup>2</sup>c sensor, a voltage regulator, and a footprint size (ex: 0805, 0603, 0402) for their resistors, capacitors, LEDs, etc. Each board will have three parts: the sensor, the voltage regulator, and the LED. Each of those parts has their own resistors or capacitors that you will need to determine for them to work properly. **Check this [PDF](https://github.com/GIXLabs/TECHIN514_W26/blob/main/Lab3_pcb-design/TECHIN514_W26_Component_Assigns.pdf) to see which sensor, voltage regulator, and footprint size has been assigned to you.**
 
 
 
