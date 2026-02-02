@@ -39,14 +39,14 @@ In this lab, you'll learn the basics about how to measure the power consumption 
 
 ### Power Consumption Measuring
 
-* ✏️ Take a screenshot of the plot on your power profiler app to show the power consumption change during a **1 minute time window with 5 different *mode or stages (Deep Sleep, Idle, Ultrasonic reading, Ultrasonic + BLE, Ultrasonic + WiFi)*** for the ESP32. Annnotate what each stage stands for.
+* ✏️ Take a screenshot of the plot on your power profiler app to show the power consumption change during a **1 minute time window with 5 different *mode or stages (Deep Sleep, Idle, Ultrasonic reading, WiFi + No Ultrasonic, Ultrasonic + WiFi)*** for the ESP32. Annnotate what each stage stands for.
 * ✏️ Set the time window **from 1 minute to 10 seconds** and take a screenshot for *each* mode/stage. Calculate how long would a 500mAh battery last when the ESP32S3 is in each mode/stage.
-* ✏️ Update your code to change the data transmission rates for BLE and WiFi and measure how the power consumption changes. Take a screenshot of the power consumption plots for both BLE and WiFi. Make plots for BLE and WiFi that show the relationship between transmission rates and average current used. Calculate how long a 500mAh battery would last for these new transmission rates.
+* ✏️ Update your code to change the data transmission rates for WiFi and measure how the power consumption changes. Take a screenshot of the power consumption plots for WiFi. Make plots for WiFi that show the relationship between transmission rates and average current used. Calculate how long a 500mAh battery would last for these new transmission rates.
 
 ### Create your own power-saving strategy
 
-* ✏️ Describe your own policy/strategy for both BLE and WiFi to make sure a 500mAh battery can support it without being recharged for at least 24 hours
-* ✏️ Implement both your strategies for BLE and WiFi. Simulate your use case and take a screenshot of the power consumption for BLE and WiFi. Annotate each stage on the plot. Calculate how long the battery will last for both your strategies.
+* ✏️ Describe your own policy/strategy for WiFi to make sure a 500mAh battery can support it without being recharged for at least 24 hours
+* ✏️ Implement your strategy for WiFi. Simulate your use case and take a screenshot of the power consumption with WiFi. Annotate each stage on the plot. Calculate how long the battery will last for both your strategies.
 * ✏️ Upload your code to GitHub. Add a link to your repo in the pdf.
 
 
@@ -410,7 +410,7 @@ void processData(AsyncResult &aResult)
 ```
 ## 5. Write Code to implement different power consumption modes/stages
 
-Once you have a successfully been able to send data to Firebase, write a program that has the ESP32 go through five different modes/stages. In each mode/stage the ESP32 will consume different amounts of power. Each mode/stage should last for 10-12 seconds. The five modes/stages are: Deep Sleep, Idle, Ultrasonic readings, Ultrasonic + BLE + send to another ESP32, and Ultrasonic + WiFi + sent to Firebase. For more information on how to put the ESP32 into deep sleep mode and the different ways to wake it up, please refer to the link in the external resources section at the top of this page.
+Once you have a successfully been able to send data to Firebase, write a program that has the ESP32 go through five different modes/stages. In each mode/stage the ESP32 will consume different amounts of power. Each mode/stage should last for 10-12 seconds. The five modes/stages are: Deep Sleep, Idle, Ultrasonic readings, WiFi + No Ultrasonic, and Ultrasonic + WiFi + sent to Firebase. For more information on how to put the ESP32 into deep sleep mode and the different ways to wake it up, please refer to the link in the external resources section at the top of this page.
 ## 5. Download nRF Connect for Desktop and J-Link Configurator (if you have not done so already)
 
 Find the software on this [website](https://www.nordicsemi.com/Products/Development-tools/nRF-Connect-for-desktop/Download#infotabs) and then install the Power Profiler App to connect with the Power Profiler Kit (see image below). Also, install the J-LINK Configurator software. The link of downloading J-LINK is [here](https://www.segger.com/downloads/jlink/).
@@ -462,7 +462,7 @@ Annotate, like above, the key moments on the screenshot which depict the events 
 
 1. Idle ESP32 (not running WiFi/BLE or ultrasonic sensor)
 2. Only ultrasonic sensor working
-3. Ultrasonic + BLE + Sending data to another ESP32
+3. WiFi + no Ultrasonic
 4. Ultrasonic + Wifi + Sending data to Firebase
 5. Deep Sleep mode
 
@@ -480,7 +480,7 @@ A typical ‘[ADAFRUIT INDUSTRIES 1578 Lithium Ion Polymer Battery](https://www.
 
 Estimate how long the battery would support each of the five use cases before dying. For example, if the average current is 50mA, then the battery can last for 10 hours (500mAh / 50mA = 10 hours).
 
-Rewrite the Arduino code to transmit your ultrasonic sensor data to another ESP32 (BLE) and Firebase (WiFi) at the five following rates:
+Rewrite the Arduino code to transmit your ultrasonic sensor data to Firebase at the five following rates:
 
 1. 2 times per second (2 Hz)
 2. 1 time per second (1 Hz)
@@ -494,7 +494,7 @@ Zoom in the window to read the averaged current on your Power Profiler app, and 
 
 ## 8. Create your own power consumption guidelines for the ESP32 and ultrasonic sensor
 
-Given the insights that you have gained thus far, create your own power consumption guidelines for a battery-powered device. This ESP32-enabled device must use an ultrasonic sensor to measure distance and transmit that distance data. The device must operate for **24 hours** on a single 500mAh battery. Do this for BLE and WiFi.
+Given the insights that you have gained thus far, create your own power consumption guidelines for a battery-powered device. This ESP32-enabled device must use an ultrasonic sensor to measure distance and transmit that distance data. The device must operate for **24 hours** on a single 500mAh battery. 
 
 Assume that this device is designed to detect whether or not an object (or person) has moved in front of the ultrasonic sensor in a room. The results of that detection should be uploaded to the Firebase cloud database. Rewrite the Arduino code to develop new power consumption guidelines for this new device. There are several variables that you can change, including deep sleep duration and frequency, or the data transmission rate, among others. For example, you can develop a policy such as *“If the ultrasonic sensor’s readout is greater than 50cm for 30 seconds, turn the ESP32 to sleep mode for 30 seconds.”*
 
