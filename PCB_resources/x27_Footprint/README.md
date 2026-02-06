@@ -1,4 +1,4 @@
-## Power Consumption Chart
+## x27 Power Consumption Chart
 
 | Mode | Avg Current (mA) | Avg Power 5V (mW) |
 |------|------------------|---------------------|
